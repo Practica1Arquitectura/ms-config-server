@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ms-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Practica1Arquitectura/micro-servicio
+          default-label: "main"
+
+server:
+  port: 8887
+
+
