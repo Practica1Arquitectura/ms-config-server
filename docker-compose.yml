@@ -1,0 +1,28 @@
+version: "2.4"
+
+networks:
+  software-config:
+    name: network-config-server
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.27.0.0/16
+          gateway: 172.27.0.1
+#networks:
+#  software:
+#    name: network-my-proyects
+#    external: true
+
+services:
+  ms-config-server:
+    image: ms-config-server:0.0.1
+    mem_limit: 150m
+    ports:
+      - "8887:8887"
+    networks:
+      - software-config
+    environment:
+      - "ZIPKIN_URL=http://192.168.0.4:9411"
+      - "EUREKA_URI=http://ms-discovery:8763/eureka"
+    volumes:
+      - "/tmp/local/logs:/opt/arquitectura/logs"
