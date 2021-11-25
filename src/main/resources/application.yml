@@ -7,8 +7,51 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Practica1Arquitectura/micro-servicio
+          uri: git@github.com:Practica1Arquitectura/micro-servicio.git
           default-label: "main"
+          ignoreLocalSshSettings: true
+          hostKey: "AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ=="
+          hostKeyAlgorithm: ssh-rsa
+          privateKey: |
+            -----BEGIN RSA PRIVATE KEY-----
+            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
+            -----END RSA PRIVATE KEY-----
 
 server:
   port: ${SERVER_PORT:8887}
