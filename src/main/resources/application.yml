@@ -13,4 +13,12 @@ spring:
 server:
   port: ${SERVER_PORT:8887}
 
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8763/eureka}
 
+encrypt:
+  key: PZpDhcRDh28rnrMw7F2y5vuKbMzyczmDL
